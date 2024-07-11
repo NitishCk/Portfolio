@@ -1,2 +1,1 @@
-# Portfolio
-This Repo has file related to my Portfolio
+# This Repo is about my Portfolio.
