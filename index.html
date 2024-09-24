@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="My Portfolio">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://nitishck.github.io/Portfolio/">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ficon%2Fportfolio_686165&psig=AOvVaw3kheFiGahmTmwYG5rBeedy&ust=1711502190764000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDEyNLgkIUDFQAAAAAdAAAAABAF">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Ck's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+     <!-----start Header section-----> 
+     <div id="header"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"> 
+        <div class="container">
+            <nav >
+                <img src="Nitish.png" alt="logo" class="logo" data-aos="zoom-in">
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#header" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+              <div class="header-text"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h1>Hello, I am <span>Nitish <br> ChittoorKrishnamurthy</span></h1> 
+                <h1><span class="text_1">Front-End Developer</span><span class="text_2">Full-Stack Developer</span></h1>
+              </div>      
+            </div>
+        </div>
+     </div>
+      <!-----End Header section----->
+
+
+      <!-----start About section----->
+      <div id="about"data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub"><b>Hardworking College Student seeking employment. Bringing forth a motivated attitude and a variety of powerful skills. Adept in various social media platforms and office technology programs. Committed to
+                    utilizing my skills to further the mission of a company. Good at grasping things and working optimistically..</p>
+                   <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                    <ul>
+                        <li><h4><span id="skills">Programming Languages - </span>Python, C, JavaScript, C++</h4></li>
+                        <li><h4><span id="skills">Tools & Technologies - </span>VS Code, Eclipse, Sublime Text</h4></li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education" >
+                    <ul>
+                        <li><h3 id="heading3">Missouri University of Science and Technology (Missouri S&T)<h4>(Aug 2021 - May 2023)</h4></h3><br>
+                        <i><b class="clgname">Master of Science in Computer Science</b></i> <b class="gpa">(GPA: 3.9/4.0)</b></li><hr>
+                        <li><h3 id="heading3">PSG College of Technology<h4>(Aug 2017 - May 2021)</h4></h3><br>
+                        <i><b class="clgname">Bachelor of Engineering in Computer Science</b></i> <b class="gpa">(GPA: 3.1/4.0)</b></li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="certifications" >
+                    <ul>
+                        <li><h3 id="heading3">HTML, CSS, and JavaScript for Web Developers<h4>(from Johs Hopkins University)</h4></h3><br></li>
+                        <li><h3 id="heading3">Introduction to Front-End Development<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">Developing Websites and Front-Ends with Bootstrap<h4>(by IBM)</h4></h3><br></li>
+                        <li><h3 id="heading3">Programming with JavaScript<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">Version Control<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">HTML and CSS in Depth<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">The Complete Sass &SCSS Course: From Beginner to Advanced<h4>(from Udemy)</h4></h3><br></li>
+                        <li><h3 id="heading3">React Basics<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">Advanced React<h4>(by META)</h4></h3><br></li>
+                        <li><h3 id="heading3">The Ultimate Redux Course<h4>(from Udemy)</h4></h3><br></li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <img src="mypic2.JPG" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+
+    <!-- skills section -->
+ 
+    <div class="skills-container">
+        <div data-aos="zoom-in">
+            <h1 class="heading">Tech Stack</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="image/html.jpeg" alt="">
+                <h3>HTML / HTML 5</h3>
+            </div>
+            <div class="box">
+                <img src="image/css.jpeg" alt="">
+                <h3>CSS / CSS 3</h3>
+            </div>
+            <div class="box">
+                <img src="image/Boostrap.png" alt="">
+                <h3>Bootstrap</h3>
+                <p>CSS FrameWorks</p>
+            </div>
+            <div class="box">
+                <img src="image/csspre.png" alt="">
+                <h3>Sass & SCSS</h3>
+                <p>CSS Preprocessors</p>
+            </div>
+            <div class="box">
+                <img src="image/js.jpeg" alt="">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="box">
+                <img src="image/typescript.png" alt="">
+                <h3>TypeScript</h3>
+            </div>
+            <div class="box">
+                <img src="image/react.png" alt="">
+                <h3>React.js</h3>
+                <p>JavaScript Frameworks</p>
+            </div>
+            <div class="box">
+                <img src="image/redux.jpeg" alt="">
+                <h3>Redux</h3>
+                <p>JavaScript State Management Library</p>
+            </div>
+            <div class="box">
+                <img src="image/nodejs.png" alt="">
+                <h3>Node.js</h3>
+                <p>JavaScript Runtime Environment</p>
+            </div>
+            <div class="box">
+                <img src="image/express.png" alt="">
+                <h3>Express.js</h3>
+                <p>Node Js Frameworks</p>
+            </div>
+            <div class="box">
+                <img src="image/mongodb.png" alt="">
+                <h3>MongoDB</h3>
+                <p>Database</p>
+            </div>
+            <div class="box">
+                <img src="image/jest.png" alt="">
+                <h3>Jest</h3>
+                <p>JavaScript Testing Frameworks</p>
+            </div>
+            <div class="box">
+                <img src="image/git.jpeg" alt="">
+                <h3>Git</h3>
+                <p>Version Control</p>
+            </div>
+            <div class="box">
+                <img src="image/github.jpeg" alt="">
+                <h3>Github</h3>
+                <p>Version Control</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+
+        <!----portfolio section Start ----->
+
+        <div id="portfolio">
+            <div class="container">
+                <div data-aos="zoom-in">
+                <h1 class="sub-title">Web Development Projects</h1>
+                <p></p>
+                <div class="work-list" >
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio3.png" >
+                        <div class="layer">
+                            <h3><b><span>myMART </span> (E-Commerce Website)</b></h3>
+                            <a href="https://nitishck.github.io/E-Commerce_Website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio4.png" >
+                        <div class="layer">
+                            <h3><b><span>Odyssey Travels</span> (Travel and Tourism Website)</b></h3>
+                            <a target="_blank"  href="https://nitishck.github.io/Travel_and_Tourism/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio2.png" >
+                        <div class="layer">
+                            <h3><b><span>Food</span> (Food Delivery Website)</b></h3>
+                            <a target="_blank"  href="https://foodatck.onrender.com"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio3.png">
+                        <div class="layer">
+                            <h3><b><span>ChitChat</span> (Chatting Application)</b></h3>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="btn">Learn More</a> -->
+            </div>
+            </div>
+            <div class="container">
+                <div data-aos="zoom-in">
+                <h1 class="sub-title">Academic Projects</h1>
+                <p></p>
+                <div class="work-list" >
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio3.png" >
+                        <div class="layer">
+                            <h3><b>Smart Waste Segregator with Status Detection</b></h3>
+                            <a href="smartwaste.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio4.png" >
+                        <div class="layer">
+                            <h3><b>Smart Health Monitoring System Using IOT</b></h3>
+                            <a href="smarthealth.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio2.png" >
+                        <div class="layer">
+                            <h3><b>Hand Gesture Recognition</b></h3>
+                            <a href="handgesture.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="Portfolio3.png">
+                        <div class="layer">
+                            <h3><b>Recurrent Neural Network For Text Classification</b></h3>
+                            <a href="textclassification.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="btn">Learn More</a> -->
+            </div>
+            </div>
+        </div>
+         <!----portfolio section End ----->
+
+
+          <!----Contact section Start ----->
+          <div id="contact"  >
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left"  data-aos="fade-up-right">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>cknitish02@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>+1 (573) 368 8051</p>
+                        <div class="social-icons" data-aos="zoom-in">
+                            
+                            <a target="_blank" class="instagram" href="https://www.instagram.com/nitish_ck/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a target="_blank" class="github" href="https://github.com/NitishCk"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/nitishck/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.html" class="btn btn2">View Resume</a>
+
+                    </div>
+                    <div class="contact-right" data-aos="fade-up-left">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Nitish ChittoorKrishnamurthy &copy; 2023 All Rights Reserved</span></p>
+            </div>
+          </div>
+   
+          <!----Contact section End ----->
+          <script>
+            var preloader = document.getElementById("Loading");
+            function loader(){
+              preloader.style.display = 'none';
+            }
+          </script>
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+      
+    <!-- aos data  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 900,
+        });
+      </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right ="0";
+        }
+        function closemenu(){
+            sidmenu.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
